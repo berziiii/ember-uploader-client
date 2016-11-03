@@ -1,0 +1,18 @@
+
+<h1> Movie List </h1>
+
+{{#each model as |movie|}}
+  <h3> {{movie.title}} </h3>
+  {{#if movie.upload_url}}
+    <div class="img-container" style="background: url({{movie.upload_url}}) no-repeat center center;
+                                      -webkit-background-size: cover;
+                                      -moz-background-size: cover;
+                                      -o-background-size: cover;
+                                      background-size: cover;">
+    </div>
+  {{else}}
+    <div class="img-container">
+      <h5> No Cover Photo </h5>
+    </div>
+  {{/if}}
+{{/each}}

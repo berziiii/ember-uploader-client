@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model (params) {
-    return this.get('store').findRecord('movie', movie.movie_id);
+    return this.get('store').findRecord('movie', params.movie_id);
   },
 });

@@ -1,0 +1,9 @@
+<form enctype="multipart/form-data" id="new-movie" {{ action 'create' on='submit' }}>
+  <fieldset>
+    <legend>New Movie</legend>
+    <input type="text" class="form-control" name="movie[title]" placeholder="Movie Title">
+    <input type="text" class="form-control" name="movie[release_year]" placeholder="Movie Release Year">
+    <input type="file" name="movie[poster]" value="Upload Cover Image">
+    <input type="submit" class="btn btn-success" name="submit" value="Add Movie">
+  </fieldset>
+</form>
